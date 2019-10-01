@@ -1,0 +1,48 @@
+<html>
+<head> 
+    <title> String Examples  </title>
+</head>
+
+<body>
+<p id="id1"> </p>
+<p id="id2">  </p>
+<p id="id3">  </p>
+<p id="id4"> </p>
+<p id="id5"> </p>
+<p id="id6"> </p>
+<script>
+var message="Lorem Ipsum is simply dummy text of the printing and typesetting industry";
+var message1="Contrary to popular belief, Lorem Ipsum is not simply random text";
+// method to display string length
+
+var stringLength = message.length;
+document.getElementById("id1").innerHTML = stringLength;
+
+// method to convert given string to lowercase
+
+var lowerCase= message.toLowerCase();
+document.getElementById("id2").innerHTML = lowerCase;
+
+
+// method to convert given string to Uppercase
+
+var uppercase=message.toUpperCase();
+document.getElementById("id3").innerHTML = uppercase;
+
+// method to return any chracter in the  given strig 
+var result=message.charAt(8);
+document.getElementById("id4").innerHTML= result;
+
+// method to join two string
+var old=message.concat(message1);
+document.getElementById("id5").innerHTML =old;
+
+// method to check string ends with charcter
+var result1= message.endsWith("industry");
+document.getElementById("id6").innerHTML = result1;
+
+
+</script>
+</body>
+
+</html>
